@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'ContainerSample/edge_insets_margin_padding2.dart';
 import 'ContainerSample/image_container.dart';
+import 'FlexibleSample/my_flexible.dart';
 import 'LayoutSample/row_column.dart';
 
 void main() => runApp(MyApp());
@@ -26,10 +27,8 @@ class MyApp extends StatelessWidget {
               fontSize: 24,
             ),
           ),
-          // //глобальная тема для приложения
-          // primarySwatch: Colors.deepPurple
       ),
-      home: const MyContainer(),
+      home: const MyFlexible(),
     );
   }
 }

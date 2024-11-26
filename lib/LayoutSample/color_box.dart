@@ -9,7 +9,7 @@ class ColorBox extends StatelessWidget {
       width: 80,
       height: 80,
       decoration: BoxDecoration(
-        color: Colors.blue[600],
+        color: Colors.blue[900],
         border: Border.all(),
       ),
     );
