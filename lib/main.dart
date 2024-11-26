@@ -1,6 +1,8 @@
 import 'package:basics/pages/HomePage.dart';
 import 'package:flutter/material.dart';
 
+import 'LayoutSamples/row_column.dart';
+
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           //глобальная тема для приложения
           primarySwatch: Colors.deepPurple),
-      home: const HomePage(),
+      home: const MyRowColumn(),
     );
   }
 }
