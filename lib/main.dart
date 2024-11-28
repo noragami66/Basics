@@ -1,12 +1,6 @@
-import 'package:basics/pages/HomePage.dart';
+import 'package:basics/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
-
-import 'ContainerSample/edge_insets_margin_padding2.dart';
-import 'ContainerSample/image_container.dart';
-import 'FlexibleSample/my_flexible.dart';
-import 'LayoutSample/row_column.dart';
-import 'TextSample/my_text.dart';
 
 void main() => runApp(MyApp());
 
@@ -29,7 +23,7 @@ class MyApp extends StatelessWidget {
             ),
           ),
       ),
-      home: const MyText(),
+      home: const HomePage(),
     );
   }
 }

@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
   @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //виджет, который мы видим при открытии приложения
       appBar: AppBar(
-        // виджет для шапки
         title: const Center(child: Text('Testing')),
       ),
       body: Container(
