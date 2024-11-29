@@ -14,7 +14,7 @@ class MyContainer extends StatelessWidget {
         body: Container(
           height: 300,
           width: 400,
-          margin: EdgeInsets.all(15),
+          margin: const EdgeInsets.all(15),
           decoration: BoxDecoration(
             image: DecorationImage(
               image: Image.network(

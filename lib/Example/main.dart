@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'person_widget.dart';
 
 
-void main() => runApp(CardApp());
+void main() => runApp(const CardApp());
 
 class CardApp extends StatelessWidget {
   const CardApp({super.key});
@@ -13,7 +13,7 @@ class CardApp extends StatelessWidget {
       title: 'Card Application',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        appBarTheme: AppBarTheme(
+        appBarTheme: const AppBarTheme(
           color: Colors.black12,
           titleTextStyle: TextStyle(
             fontSize: 32,
@@ -22,7 +22,7 @@ class CardApp extends StatelessWidget {
           ),
         ),
       ),
-      home: PersonWidget(),
+      home: const PersonWidget(),
     );
   }
 }

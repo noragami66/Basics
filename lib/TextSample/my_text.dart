@@ -7,7 +7,7 @@ class MyText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Text Theory'),
+        title: const Text('Text Theory'),
       ),
       body: Row(
         children: [

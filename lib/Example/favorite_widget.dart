@@ -19,7 +19,7 @@ class _FavoriteWidgetState extends State<FavoriteWidget> {
           child: IconButton(
               onPressed: _toggleFavorite,
               color: Colors.purple[600],
-              icon: (_isFavorite ? Icon(Icons.favorite) : Icon(Icons.favorite_border))),
+              icon: (_isFavorite ? const Icon(Icons.favorite) : const Icon(Icons.favorite_border))),
         ),
         SizedBox(
           width: 40,

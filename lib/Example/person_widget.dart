@@ -8,7 +8,7 @@ class PersonWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Favorite Card',
         ),
       ),
@@ -22,24 +22,24 @@ class PersonWidget extends StatelessWidget {
         _buildTopImage(),
         Center(
           child: Container(
-            padding: EdgeInsets.only(left: 20, right: 20),
+            padding: const EdgeInsets.only(left: 20, right: 20),
             child: Column(
               children: [
                 Container(
-                  margin: EdgeInsets.all(5),
+                  margin: const EdgeInsets.all(5),
                   child: _buildRating(),
                 ),
                 Card(
-                  margin: EdgeInsets.all(5),
+                  margin: const EdgeInsets.all(5),
                   elevation: 5,
                   child: Container(
+                    padding: const EdgeInsets.all(10),
                     child: _buildAction(),
-                    padding: EdgeInsets.all(10),
                   ),
                 ),
                 Container(
+                  margin: const EdgeInsets.all(5),
                   child: _buildDescription(),
-                  margin: EdgeInsets.all(5),
                 ),
               ],
             ),
@@ -50,7 +50,7 @@ class PersonWidget extends StatelessWidget {
   Widget _buildTopImage() => Container(
         child: Card(
           elevation: 10,
-          margin: EdgeInsets.only(left: 10, right: 10, top: 10),
+          margin: const EdgeInsets.only(left: 10, right: 10, top: 10),
           child: Image.asset(
             'assets/images/porsche.jpg',
             fit: BoxFit.cover,
@@ -58,7 +58,7 @@ class PersonWidget extends StatelessWidget {
         ),
       );
 
-  Widget _buildRating() => ListTile(
+  Widget _buildRating() => const ListTile(
         title: Text(
           'Porsche 911',
           style: TextStyle(
@@ -98,14 +98,14 @@ class PersonWidget extends StatelessWidget {
         ],
       );
 
-  Widget _buildDescription() => ListTile(
-      title: Text('Description',
-      style: TextStyle(
-        fontWeight: FontWeight.w500,
-      ),
-      ),
-      subtitle: Text(
-          'The Porsche 911 (pronounced Nine Eleven or in German: Neunelf) is a two-door high performance rear-engined sports car introduced in September 1964 by Porsche AG of Stuttgart, Germany. It has a rear-mounted flat-six engine and originally a torsion bar suspension. The car has been continuously enhanced through the years but the basic concept has remained unchanged. The engines were air-cooled until the introduction of the 996 series in 1998.'
-      ),
-  );
+  Widget _buildDescription() => const ListTile(
+        title: Text(
+          'Description',
+          style: TextStyle(
+            fontWeight: FontWeight.w500,
+          ),
+        ),
+        subtitle: Text(
+            'The Porsche 911 (pronounced Nine Eleven or in German: Neunelf) is a two-door high performance rear-engined sports car introduced in September 1964 by Porsche AG of Stuttgart, Germany. It has a rear-mounted flat-six engine and originally a torsion bar suspension. The car has been continuously enhanced through the years but the basic concept has remained unchanged. The engines were air-cooled until the introduction of the 996 series in 1998.'),
+      );
 }
